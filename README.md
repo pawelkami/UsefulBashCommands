@@ -36,7 +36,7 @@ Repository contains useful bash commands.
 
 or
 
-> find . -type f -exec ./recodeifneeded new_encoding {} \;
+> find . -type f -exec ./recodeifneeded new_encoding {} \\;
 
 
 
@@ -50,4 +50,4 @@ or
 
 
 
-> find . -print -exec sed -i.bak 's/original/new/g' {} \;
+> find . -print -exec sed -i.bak 's/original/new/g' {} \\;
