@@ -51,3 +51,8 @@ or
 
 
 > find . -print -exec sed -i.bak 's/original/new/g' {} \\;
+
+or
+
+> grep -rl oldtext . | xargs sed -i 's/oldtext/newtext/g'
+
