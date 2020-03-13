@@ -56,3 +56,8 @@ or
 
 > grep -rl oldtext . | xargs sed -i 's/oldtext/newtext/g'
 
+
+#### Trim first n-bytes of file
+
+> dd bs=*n* skip=1 if=input.bin of=output.bin
+
